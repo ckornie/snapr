@@ -1,0 +1,9 @@
+[Unit]
+Description=Trigger hourly snapr snapshots
+
+[Timer]
+OnCalendar=hourly
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=Take snapshots with snapr
+
+[Service]
+Type=oneshot
+ExecStart=/sbin/snapr --snap
+
+[Install]
+WantedBy=multi-user.target
