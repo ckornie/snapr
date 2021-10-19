@@ -1,6 +1,7 @@
 # Snapr
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/ckornie/snapr)](https://goreportcard.com/report/github.com/ckornie/snapr)
+[![Build](https://github.com/ckornie/snapr/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/ckornie/snapr/actions/workflows/build.yml) [![Go Report Card](https://goreportcard.com/badge/github.com/ckornie/snapr)](https://goreportcard.com/report/github.com/ckornie/snapr)
+
 ## Introduction
 Snapr creates ZFS snapshots on a schedule and replicates them to S3 compatible storage. It aims to be simple and sturdy.  Use it if you want to create snapshots on a schedule, replicate them, and restore at a later date.
 
