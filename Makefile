@@ -9,6 +9,7 @@ TARGET=cmd/snapr/main.go
 all: build
 
 build: 
+		mkdir -p $(BUILD_DIR)
 		$(GOBUILD) -o $(BUILD_DIR) -v ./...
 
 test: 
