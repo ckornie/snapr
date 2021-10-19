@@ -285,7 +285,7 @@ func (c catalogue) verify(fs string) ([][]string, error) {
 
 	unverified, ok := c[fs]
 	if !ok {
-		return nil, fmt.Errorf("no catalogue for %s", fs)
+		return verified, nil
 	}
 
 	for i := 0; i < len(unverified); i++ {
