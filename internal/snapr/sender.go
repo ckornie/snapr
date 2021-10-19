@@ -50,6 +50,8 @@ func (s *sender) Send() {
 
 			if err := remote.refresh(*fs); err != nil {
 				Logger.Warn().Msgf("sending failed for %s: %s", target, err)
+			} else {
+				Logger.Info().Msgf("sending successful for %s", target)
 			}
 		}
 	}
