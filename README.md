@@ -121,7 +121,7 @@ root@example ~ # zfs mount pool-0/example
 ### Policy Based Snapshots
 As my requirements are very simple I haven't implemented policy based snapshots. If you need more complex snapshot scheduling you can look towards:
 
+- [zrepl](https://github.com/zrepl/zrepl)
 - [sanoid](https://github.com/jimsalterjrs/sanoid)
-- [zfs-auto-snapshot](https://github.com/zfsonlinux/zfs-auto-snapshot)
 
 Both of these tools - in addition to creating snapshots - can destroy ZFS snapshots according to a policy. The send functionality of Snapr should work smoothly with these tools. Simply leave your 'snap' list empty.
