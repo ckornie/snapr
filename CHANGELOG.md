@@ -14,6 +14,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ## [1.0.0] - 2021-11-01
 - The first production release of snapr.
 
-[Unreleased]: https://github.com/ckornie/snapr/releases/tag/v1.0.1...HEAD
-[1.0.1]: https://github.com/ckornie/snapr/releases/tag/v1.0.0...v1.0.1
+[Unreleased]: https://github.com/ckornie/snapr/compare/v1.0.0...HEAD
+[1.0.1]: https://github.com/ckornie/snapr/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/ckornie/snapr/releases/tag/v1.0.0
