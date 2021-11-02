@@ -27,7 +27,7 @@ func (s statusCodes) contains(statusCode int) bool {
 	return false
 }
 
-func (r fixedRetry) retry(cause error) time.Duration {
+func (r *fixedRetry) retry(cause error) time.Duration {
 	for _, e := range r.fatal {
 		if errors.Is(cause, e) {
 			return 0

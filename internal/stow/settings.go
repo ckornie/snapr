@@ -82,7 +82,7 @@ func (s *Settings) applyDefaults() {
 
 	if s.Retry == nil {
 		s.Retry = func() retryStrategy {
-			return fixedRetry{
+			return &fixedRetry{
 				count:     120,
 				delay:     5 * time.Second,
 				retryable: []int{408, 429, 500, 502, 503, 504},
