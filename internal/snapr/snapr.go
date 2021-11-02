@@ -5,7 +5,7 @@ import (
 	"snapr/internal/zed"
 )
 
-// Snapr will snap, send, and restore ZFS filesystems.
+// Snapr will snap, send, and restore ZFS file systems.
 type Snapr struct {
 	ctx      context.Context
 	settings *Settings
@@ -32,6 +32,6 @@ func (s *Snapr) Send() {
 }
 
 // Restore restores a file system from a bucket.
-func (s *Snapr) Restore(filesystem string) error {
-	return s.newRestorer().restore(filesystem)
+func (s *Snapr) Restore(fileSystem string) error {
+	return s.newRestorer().restore(fileSystem)
 }

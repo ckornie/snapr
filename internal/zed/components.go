@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-// FileSystem represents a filesystem
+// FileSystem represents a file system
 type FileSystem struct {
 	Pool string
 	Name string

@@ -98,7 +98,7 @@ The `volumeSize` (megabytes) specifies the maximum size for a single file. Cloud
 To restore a file system it must be configured. The following command will perform a full restore of the file system `pool-0/example`:
 
 ```console
-root@example ~ # snapr --restore --filesystem "pool-0/example"
+root@example ~ # snapr --restore --file-system "pool-0/example"
 ```
 
 This will look at the configured 'send' entries for `pool-0/example` and restore from the **last** entry. It will fail if the file system is already present locally. You can perform a rename if you want to keep an existing file system:

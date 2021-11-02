@@ -15,7 +15,7 @@ import (
 )
 
 var configuration string
-var filesystem string
+var fileSystem string
 var debug bool
 
 var snap = &snapr.SnapArguments{}
@@ -23,11 +23,11 @@ var send = &snapr.SendArguments{}
 var restore = &snapr.RestoreArguments{}
 
 func init() {
-	flag.BoolVar(&snap.Active, "snap", false, "Creates snapshots based on the configured filesystems and intervals")
+	flag.BoolVar(&snap.Active, "snap", false, "Creates snapshots based on the configured file systems and intervals")
 	flag.BoolVar(&send.Active, "send", false, "Sends new snapshots to the configured destinations")
-	flag.BoolVar(&restore.Active, "restore", false, "Restores a filesystem from a bucket")
+	flag.BoolVar(&restore.Active, "restore", false, "Restores a file system from a bucket")
 	flag.StringVar(&configuration, "configuration", "/etc/snapr.conf", "Specify an alternate configuration file")
-	flag.StringVar(&filesystem, "filesystem", "", "A file system")
+	flag.StringVar(&fileSystem, "file-system", "", "A file system")
 	flag.BoolVar(&debug, "debug", false, "Sets log level to debug")
 }
 
@@ -74,10 +74,10 @@ func run() error {
 }
 
 func runRestore(ctx context.Context, s *snapr.Snapr) error {
-	if filesystem == "" {
-		return fmt.Errorf("no filesystem specified")
+	if fileSystem == "" {
+		return fmt.Errorf("no file system specified")
 	}
-	return s.Restore(filesystem)
+	return s.Restore(fileSystem)
 }
 
 func logger() {
